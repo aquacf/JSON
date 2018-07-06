@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title>API call</title>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+
+<body>
+
+	<button id="loadData">Load data from API</button>
+	<div id="apiTitle"></div>
+	<div id="apiDescription"></div>
+
+
+</body>
+
+</html>
+
+
+
+<script>
+	document.getElementById("loadData").addEventListener('click', loadData);
+
+	function loadData() {
+		var url = "https://api.nasa.gov/planetary/apod?api_key=NNKOjkoul8n1CH18TWA9gwngW1s1SmjESPjNoUFo";
+
+		$.ajax({
+			url: url,
+			success: function(result) {
+
+				document.getElementById("apiTitle").innerHTML = result.title + "<br><br>";
+				document.getElementById("apiDescription").innerHTML = result.explanation;
+
+			}
+		});
+	}
+
+</script>

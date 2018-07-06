@@ -1,0 +1,312 @@
+<!DOCtype HTML>
+<!--Tells the browser that this is a HTML file-->
+<html>
+	<!--initialize html elements-->
+
+	<head>
+		<!--All links are in the head section (jquery etc) the head section won't be seen in the browser-->
+		<title>Online Trainer Shop</title>
+
+		<meta charset="utf-8" />
+		<!--Allows you to use the code to use symbols e.g. @, & etc-->
+		<meta http-equiv="content-type" content="text/html" />
+		<!--specifies content as being HTML-->
+		<meta name="viewport" content="width=device-width, initial-scale-1" />
+		<!--Make browser work well on mobile devices. It stops the browser from lying about the screen size-->
+
+		<!--NORMALIZE.CSS RESETS ALL BROWSER VALUES-->
+		<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css" />
+
+		<!--FONT AWSOME CDN - CONTENT DELIVERY NETWORK-->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+		<!--LOVERS QUARREL FONT-->
+		<link href="https://fonts.googleapis.com/css?family=Lovers+Quarrel" rel="stylesheet">
+
+		<!--MUKTA FONT-->
+		<link href="https://fonts.googleapis.com/css?family=Mukta" rel="stylesheet">
+
+		<!--CUSTOM FONT (28 DAYS LATER)-->
+		<link href="vendors/css/28_days_font.css" rel="stylesheet">
+
+		<!--BOOTSTRAP CDN-->
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+		<!--THIS IS OUR MAIN CSS-->
+		<link rel="stylesheet" type="text/css" href="resources/css/main.css" />
+
+		<!--JQUERY-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	</head>
+
+	<body>
+		<!--HOME SECTION start-->
+		<section id="homeBgImage" class="videoSetup">
+			<div id="homeBack">
+				<header id="navHeader">
+					<div id="logo">
+						<a href="#home"><img src="resources/img/logo.png"/></a>
+					</div>
+					<div id="cartIcon">
+						<a href="blank"><i class="fas fa-shopping-basket"></i></a>
+					</div>
+					<div id="navContainer">
+						<div id="3lines">
+							<span class="navBtn">&#8801;</span>
+						</div>
+						<!--Navigation section start-->
+						<nav>
+							<ul class="menuItems">
+								<li><a href="#home">Home</a></li>
+								<li><a href="#products">Products</a></li>
+								<li><a href="#sales">Sales</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#contact">Contact</a></li>
+								<li class="addToCart"><a href="#viewCart">View Cart</a></li>
+							</ul>
+						</nav>
+					</div>
+					<!--Navigation section end-->
+				</header>
+				<div id="exclusiveTrainers">Exclusive<br>Trainers</div>
+				<div id="limitedEdition">Limited Edition</div>
+				<div class="newArrivals">
+					<button id="newArrivalsBtn">New Arrivals</button>
+				</div>
+
+				<video class="myVideo" width="100%" height="auto" autoplay loop>
+					<source src="resources/video/homeVideo.mp4" type="video/mp4"/>
+					<source src="resources/video/homeVideo.mp4" type="video/ogg"/>
+					Your browser does not support the video tag.
+				</video>
+			</div>
+		</section>
+		<!--HOME SECTION end-->
+
+		<!--
+<div class="row">
+<div class="col-lg-3 col-md-6" style="height: 300px; background-color:red;">.col-sm-4</div>
+<div class="col-lg-3 col-md-6" style="height: 300px; background-color:blue;">.col-sm-4</div>
+<div class="col-lg-3 col-md-6" style="height: 300px; background-color:green;">.col-sm-4</div>
+</div>
+-->
+
+		<!--PRODUCT SECTION start-->
+		<section id="products">
+			<div class="titles">
+				<h1>Products</h1>
+				<h2>All the best and unique trainers collection at exclusive PRICES!</h2>
+			</div>
+
+			<div class="row">
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/blackpuma.jpg" alt="Puma Suede Classic Trainers In Black" />
+						<figcaption>Puma Suede Classic Trainers In Black <span>&pound;62.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/khakinike.jpg" alt="Nike Roshe Premium Trainers In Khaki" />
+						<figcaption>Nike Roshe Premium Trainers In Khaki <span>&pound;70.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/pullandbear.jpg" alt="Pull &amp; Bear Trainers With Stripes In White" />
+						<figcaption>Pull &amp; Bear Trainers With Stripes In White <span>&pound;27.99</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/whiteadidas.jpg" alt="Adidas Originals EQT Trainers In White" />
+						<figcaption>Adidas Originals EQT Trainers In White <span>&pound;100.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/originaladidas.jpg" alt="Adidas Originals X_PLR Trainers In Grey" />
+						<figcaption>Adidas Originals X_PLR Trainers In Grey <span>&pound;80.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/lightgreylacoste.jpg" alt="Lacoste Spirit 317 Trainers In Light Grey And Pearl Copper" />
+						<figcaption>Lacoste Spirit 317 Trainers In Grey And Pearl Copper <span>&pound;77.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/slipdenin.jpg" alt="ASOS Slip On Plimsolls In Denim With Splatter Print" />
+						<figcaption>ASOS Slip On Plimsolls In Denim With Splatter Print <span>&pound;50.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/featuredProducts/whiteconverse.jpg" alt="Converse All Star High Top White Trainers" />
+						<figcaption>Converse All Star High Top White Trainers <span>&pound;50.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+			</div>
+
+		</section>
+		<!--PRODUCT SECTION end-->
+
+
+		<!--SALES SECTION start-->
+		<section>
+			<div class="titles">
+				<h1>Sales</h1>
+				<h2>Take advantage of our sales and get up to 50% DISCOUNT!</h2>
+			</div>
+			<div class="row">
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/salesProducts/blacktopplimsolls.jpg" alt="Lyle & Scott Lunan Hi Top Plimsolls In Twill Black" />
+						<figcaption>Lyle &amp; Scott Lunan Hi Top Plimsolls In Twill Black <span>&pound;35.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/salesProducts/camoconverse.jpg" alt="Converse Chuck Taylor All Star II Plimsoll In Camo" />
+						<figcaption>Converse Chuck Taylor All Star II Plimsoll In Camo<span>&pound;41.50</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/salesProducts/greyplimsolls.jpg" alt="Aldo Greeney Plimsolls" />
+						<figcaption>Aldo Greeney Plimsolls<span>&pound;35.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+
+				<article class="productContainer col-lg-3 col-md-6">
+					<figure>
+						<img src="resources/salesProducts/redconverse.jpg" alt="Converse Chuck Taylor All Star II Plimsoll In Red" />
+						<figcaption>Converse Chuck Taylor All Star II Plimsoll In Red <span>&pound;35.00</span></figcaption>
+					</figure>
+					<button class="addToCart"><a href="#">Add to Cart</a></button>
+				</article>
+			</div>
+
+			<article class="productContainer" id="shoppingForm">
+				<!--				<label>SHOPPING CART - Drag and Drop the trainers image here...</label>-->
+
+				<form id="deliveryForm">
+					<label><strong>PREMIER DELIVERY</strong> - unlimited next-day delivery and click &amp; collect for &pound;9.95 a year.</label> 
+					<br>
+					<br>
+					Username:
+					<br>
+					<input type="text" name="username" /> 
+					<br>
+					Password:
+					<br>
+					<input type="password" name="password" />
+					<br>
+					<input class="addToCart" type="submit" name="login" value="Login" />
+					<input class="addToCart" type="submit" name="register" value="Register" />
+				</form>
+			</article>
+
+		</section>
+		<!--SALES SECTION end-->
+
+
+		<!--ABOUT SECTION start-->
+		<section>
+			<div class="titles">
+				<h1>About</h1>
+				<h2>A brief description of our company and all the services we offer.</h2>
+			</div>
+
+			<div class="row" id="aboutDiv">
+				<div class="col-lg-6" id="video">
+					<video width="100%" height="auto" controls>
+						<source src="resources/video/trainers.mp4" type="video/mp4"/>
+						<source src="resources/video/trainers.ogg" type="video/ogg"/>
+						Your browser does not support the video tag.
+					</video>
+				</div>
+				<div class="col-lg-6 titles">
+					<p>At lumière we provide superior customer service, with a commitment to deliver distinctive products of the highest quality. Our trainers and promotional items communicate a classic, retro influence. Keeping a watchful eye on trends and styles, our in-house graphic designers work to create a unique company, group or team identity – one that sets you apart from the rest.
+					</p>
+					<p>We are proud of our exlusive range of trainers with limited edition lines to compete with all the top brands in the world.</p>
+					<p>Our Premier Delivery service is one of the best delivery services available online and the most affordable.</p>
+
+
+
+
+				</div>
+			</div>
+
+
+		</section>
+		<!--ABOUT SECTION end-->
+
+		<!--CONTACT SECTION start-->
+		<section id="contactBgImage">
+			<div class="overlay">
+				<!--
+<div class="titles">
+<h1>About</h1>
+<h2>A brief description of our company and all the services we offer.</h2>
+</div>
+-->
+			</div>
+		</section>
+		<!--CONTACT SECTION end-->
+
+		<!--MAP SECTION start-->
+		<section>
+			<div>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.0474164754355!2d-0.07746708435332735!3d51.51234607963586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761cb3a2991b2b%3A0x7db0f0cc1b2512e5!2sJust+IT+Training+and+Apprenticeships!5e0!3m2!1sen!2suk!4v1530267325798" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+		</section>
+		<!--MAP SECTION end-->
+
+
+
+	</body>
+
+
+	<script>
+		$(document).ready(function(){
+			$("#newArrivalsBtn").click(function(e) {
+				e.preventDefault();
+
+				$('html, body').animate({
+					scrollTop: $("#products").offset().top - 60
+				}, 1000);
+
+			});
+
+		});
+
+
+
+	</script>
+</html>
+
+

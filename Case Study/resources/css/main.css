@@ -1,0 +1,489 @@
+/*-------WEBSITE COLOUR SCHEME-------*/
+/*
+Main colours:
+Primary colour - rgb(183, 154, 246); //purple for navigation links
+Secondary colour - rgb(53, 38, 80); //darker purple
+Third colour - rgb(200, 177, 250); //lighter purple*/
+
+/*-------MOBILE STYLES-------*/
+
+/*All images and videos will be 100% of their parent*/
+/*
+img, video{
+width: 100%;
+}
+*/
+
+img{
+	width: 100%;
+}
+
+/*-------GLOBAL STYLES-------*/
+
+/*Apply a natural box model layout to all elements*/
+*{
+	box-sizing: border-box;
+}
+
+/*------- Set default style for body so all browsers will look the same -------*/
+body{
+	font-family: 'Mukta', sans-serif;
+	font-size: 16px;
+	color: rgb(20, 20, 20);
+	margin: 0;
+	padding: 0;
+}
+
+
+/*-------HOME PAGE STYLES-------*/
+#homeBgImage{
+	background-image: url(../img/trainerHomePage.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-attachment: fixed;
+}
+
+/*------- Positioning for Logo -------*/
+#logo {
+	width:  40px;
+	position: fixed;
+	top: 5px;
+	left: 10px;
+	z-index: 150;
+}
+
+/*------- Positioning for Shopping Cart icon -------*/
+#cartIcon{
+	width: 60%;
+	margin: 0 20%;
+	position: fixed;
+	text-align: center;
+	top: 10px;
+	z-index: 110;
+}
+
+/*-------NAVIGATION SECTION START-------*/
+#navContainer{
+	background-color: rgb(53, 38, 80);
+	color: rgb(255, 255, 255);
+	width: 100%;
+	height: auto;
+	position: fixed;
+	z-index: 100;
+	top: 0;
+	border-bottom: 2px solid rgb(183, 154, 246);
+}
+
+/*This is for our cartIcon*/
+.fa-shopping-basket{
+	font-size: 2em;
+	color: rgb(200, 177, 250);
+	opacity: 0.7;
+}
+
+/*This is styling for our 3 line icon*/
+.navBtn{
+	font-size: 3em;
+	text-align: center;
+	display: block;
+	/*	margin: 0 20px 0 75vw;*/
+	margin-left: 75vw;
+	background-color: rgb(44, 0, 88);
+}
+
+/*------- Drop down menu positioning -------*/
+nav li a, nav li{
+	width: 100%;
+	height: auto;
+	display: block;
+	text-decoration: none;
+	outline-style: none;
+	list-style-type: none;
+}
+
+/*------- 3 lines drop down menu -------*/
+.menuItems{
+	display: none;
+}
+
+/*------- 3 lines drop down menu anchor tag (link) styling -------*/
+.menuItems a{
+	color: rgb(255, 255, 255);
+	text-align: right;
+	padding: 15px 5vw 15px 0;
+}
+
+/*-------NAVIGATION SECTION END-------*/
+
+
+/*------- Exclusive trainers div -------*/
+#exclusiveTrainers{
+	padding-top: 20vh;
+	padding-right: 5vw;
+	top: 23vh;
+	color: lightgrey;
+	text-transform: uppercase;
+	text-align: right;
+	font-family: '28DaysLater';
+	font-size: 2em;
+	letter-spacing: 3px;
+}
+
+/*------- Limited Edition div -------*/
+#limitedEdition{
+	position: absolute;
+	top: 82vh;
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-family: 'Lovers Quarrel', cursive, sans-serif;
+	font-size: 2em;
+	letter-spacing: 3px;
+}
+
+/*------- New Arrivals div (positioning) -------*/
+.newArrivals{
+	position: absolute;
+	top: 90vh;
+	width: 100%;
+	color: white;
+	display: flex; 
+	justify-content: center;
+}
+
+/*------- New Arrivals button -------*/
+.newArrivals button{
+	padding: 10px 15px;
+	border-radius: 5px 5px;
+	background-color: rgba(53, 38, 80, 0.35);
+	color: white;
+	border: 1px solid rgb(200, 177, 250);
+	text-transform: uppercase;
+	text-shadow: 2px 2px 15px white, 0 0 35px red, 0 0 15px darkred;
+	font-family: sans-serif;
+}
+
+@font-face {
+	font-family: '28DaysLater';
+	src: url(../../vendors/fonts/28DaysLater.ttf);
+	src: url(../../vendors/fonts/28dayslater.eot);
+	src: url(../../vendors/fonts/28dayslater.woff);
+	src: url(../../vendors/fonts/28dayslater.woff2);
+
+	font-weight: normal;
+}
+
+/*-------STYLING FOR OUR PRODUCTS PAGE-------*/
+h1{
+	text-transform: uppercase;
+	font-size: 1.5em;
+	text-align: center;
+	font-weight: lighter;
+}
+
+h2{
+	font-weight: lighter;
+	text-align: center;
+	font-size: 1.25em;
+	margin: auto 5vw;
+}
+
+.productContainer{
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+
+/*STYLING FOR ALL BUTTONS WITHIN PRODUCTS*/
+.addToCart{
+	border-radius: 5px 5px;
+	padding: 10px 15px;
+	background-color: rgba(53, 38, 80);
+	cursor: pointer;
+	color: white;
+	text-align: center;
+}
+.addToCart a{
+	color: white;
+	text-decoration: none;
+}
+/*Pseudo selector - inserts contect after the HTML element*/
+.addToCart a:after{
+	/*	enter unicode characters to our add to cart button*/
+	padding-left: 5px;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	content: "\f07a";
+}
+.productContainer figure{
+	margin-bottom: 0;
+}
+
+figcaption span{
+	display: block;
+	font-weight: bold;
+}
+
+figcaption{
+	min-height: 60px;
+}
+/*-------***************************-------*/
+
+#shoppingForm{
+	margin: 2em;
+	border: 2px solid rgb(214, 214, 214);
+	padding: 2em;
+
+}
+#deliveryForm input
+{
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+
+
+
+#contactBgImage{
+	background-image: url(../img/trainerContactBackground.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+}
+
+.titles{
+	margin-top: 5vh;
+	margin-bottom: 5vh;
+}
+
+
+.allTrainers{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+/**************************************/
+
+
+/********MEDIA QUERIES********/
+@media screen and (min-width: 768px){
+	#exclusiveTrainers{
+		font-size: 4em;
+
+	}
+
+	figcaption{
+		min-height: 70px;
+	}
+
+	#limitedEdition{
+		text-align: right;
+		padding-right: 5vw;
+		font-size: 4em;
+		top: 75vh;
+
+	}
+	.newArrivals{
+		padding-right: 4vw;
+		justify-content: flex-end;
+		font-size: 2em;
+		top: 85vh;
+
+	}
+	.newArrivals button{
+		padding: 20px 30px;
+
+	}
+
+	h1{
+		font-size: 3em;
+	}
+	h2{
+		font-size: 2em;
+	}
+}
+
+@media screen and (min-width: 1024px){
+
+	h1{
+		font-size: 2em;
+	}
+	h2{
+		font-size: 1em;
+	}
+
+	.menuItems{
+		display: inline;
+	}
+
+	#cartIcon, .navBtn{
+		display: none;
+	}
+
+	/*------- Positioning for Logo -------*/
+	#logo {
+		width:  10%;
+		top: 15vh;
+		left: 4vw;
+		position: absolute;
+		z-index: 90;
+	}
+
+	#exclusiveTrainers{
+		font-size: 4em;
+		padding-top: 50vh;
+		padding-right: 40vh;
+
+	}
+	#limitedEdition{
+		text-align: left;
+		padding-left: 2vw;
+		font-size: 3em;
+		top: 75vh;
+
+	}
+	.newArrivals{
+		padding-left: 4vw;
+		justify-content: initial;
+		font-size: 1em;
+		top: 85vh;
+
+	}
+	.newArrivals button{
+		padding: 15px 20px;
+
+	}
+
+
+
+	#navContainer{
+		/*	background-color: rgb(53, 38, 80);*/
+		color: rgb(255, 255, 255);
+		/*	width: 100%;*/
+		/*	height: auto;*/
+		/*	position: fixed;*/
+		/*	z-index: 100;*/
+		top: 0;
+		border: none;
+		text-align: right;
+		padding: 10px 0px;
+
+	}
+
+	nav a{
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		font-size: 0.7em;
+	}
+
+	/*------- Drop down menu positioning -------*/
+	nav li a, nav li{
+		width: 100%;
+		height: auto;
+		display: block;
+		text-decoration: none;
+		outline-style: none;
+		list-style-type: none;
+	}
+
+	/*------- 3 lines drop down menu anchor tag (link) styling -------*/
+	.menuItems a{
+		color: rgb(255, 255, 255);
+		text-align: center;
+		padding: 0 20px;
+		display: inline;
+	}
+
+	.menuItems li{
+		display: inline;
+		border: none;
+	}
+}
+
+
+
+@media screen and (min-width: 1280px){
+
+	#homeBgImage{
+		background-image: none;
+	}
+
+	.myVideo{
+		display: inline-block;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		right: 0;
+		z-index: -1000;
+	}
+
+	.videoSetup{
+		background: linear(rgb(0, 0, 0, 0.8), rgb(0, 0, 0, 0.8));
+		overflow: hidden;
+
+	}
+
+
+	#homeBack{
+		background: rgba(0, 0, 0, 0.8);
+		height: 100%;
+		width: 100%;
+		z-index: 3;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************** OVERLAY ****************/
+
+.overlay {
+	background: rgb(0, 0, 0);
+	height: 100%;
+	width: 100%;
+	opacity: .5;
+
+}
+
+
+.row{
+	margin: 0 5%;
+}
+
+#video{
+	display: flex;
+	align-items: center;
+}
+
+
+#aboutDiv{
+	margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<title> Interest only calculator</title>
+</head>
+
+<body>
+	<form>
+		<label>Loan amount</label>
+		<input type="text" id="amount" placeholder="Loan amount" />
+		<label>Interest rate</label>
+		<input onkeydown="myFunction()" type="text" id="interest" placeholder="Interest rate" />
+		<label>Length of loan</label>
+		<input type="text" id="length" placeholder="Length of Loan" />
+		<input type="button" id="calculate" value="Calculate interest" />
+	</form>
+
+	<div id="result"></div>
+
+	<script src="interestOnly.js"></script>
+
+</body>
+
+</html>
